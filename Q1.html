@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and String Methods Example</title>
+</head>
+<body>
+    <script>
+        // Example array
+        const myArray = [1, 2, 3, 4, 5];
+
+        // Demonstrating array methods
+        console.log("Initial array:", myArray);
+
+        // Push an element to the end of the array
+        myArray.push(6);
+        console.log("After push:", myArray);
+
+        // Pop the last element from the array
+        myArray.pop();
+        console.log("After pop:", myArray);
+
+        // Shift the first element from the array
+        myArray.shift();
+        console.log("After shift:", myArray);
+
+        // Unshift an element to the beginning of the array
+        myArray.unshift(0);
+        console.log("After unshift:", myArray);
+
+        // Slice a portion of the array
+        const slicedArray = myArray.slice(1, 4);
+        console.log("Sliced array:", slicedArray);
+
+        // Sort the array
+        myArray.sort();
+        console.log("After sorting:", myArray);
+
+        // Reverse the array
+        myArray.reverse();
+        console.log("After reversing:", myArray);
+
+        // Example string
+        const myString = "JavaScript is amazing!";
+
+        // Demonstrating string methods
+        console.log("Lowercase:", myString.toLowerCase());
+        console.log("Length:", myString.length);
+        console.log("Substring:", myString.substring(0, 7));
+        console.log("Replaced String:", myString.replace("amazing", "awesome"));
+
+        // Check if '3' exists in the array
+        console.log("3 exists in array:", myArray.includes(3));
+    </script>
+</body>
+</html>

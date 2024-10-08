@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+
+#p{
+    color: rgb(134, 220, 186);
+    background-color: #3d3b3b;
+    
+}
+
+.pomodoro-clock {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.timer {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.controls button,
+.session-control button,
+.break-control button {
+    background-color: #6961db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 332px;
+}
+
+.controls button:hover,
+.session-control button:hover,
+.break-control button:hover {
+    background-color: #555;
+}
+
+.session-control, .break-control {
+    margin-top: 10px;
+}

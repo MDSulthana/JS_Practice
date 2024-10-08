@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Concepts Example</title>
+</head>
+<body>
+    <script>
+        // 1. Function Declaration
+        function greetDeclaration() {
+            console.log("Hello, Alice (Function Declaration)");
+        }
+        greetDeclaration();
+
+        // 2. Function Expression
+        const greetExpression = function() {
+            console.log("Hello, BOb (Function Expression)");
+        };
+        greetExpression();
+
+        // 3. Arrow Function
+        const greetArrow = () => {
+            console.log("Hello, Charlie (Arrow Function)");
+        };
+        greetArrow();
+
+        // 4. Function Constructor
+        function Person(Name) {
+            this.Name = Name;
+        }
+        const person = new Person("Dave");
+        console.log(`Hello, ${person.Name} (Function Constructor) `);
+
+        // 5. IIFE (Immediately Invoked Function Expression)
+        (function() {
+            console.log("Hello,Eve (IIFE)");
+        })();
+
+        // 6. Generator Function
+        function* greetGenerator() {
+            yield console.log("Hello,World (Generator Function)");
+        }
+        const generator = greetGenerator();
+        generator.next();
+
+        // 7. Returned Function
+        function createGreeting(name) {
+            return function() {
+                console.log(`Hello, ${name} (Returned function)`);
+            };
+        }
+        const greetFrank = createGreeting("Frank");
+        greetFrank();
+
+        // 8. Object Method
+        const objMethod = {
+            greet: function() {
+                console.log("Hello,Grace (Object Method)");
+            }
+        };
+        objMethod.greet();
+
+        
+    </script>
+</body>
+</html>
